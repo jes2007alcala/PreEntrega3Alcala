@@ -1,0 +1,21 @@
+.logoNavContainer{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.logoNavContainer img{
+    width: 10rem;
+}
+
+.logoNavContainerImg{
+    width: 70px;
+
+}
+
+.logo {
+    letter-spacing: 5px;
+    font-size: 1.3em;
+}

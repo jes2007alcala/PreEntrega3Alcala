@@ -1,0 +1,148 @@
+@import "header";
+@import "logos";
+@import "footer";
+
+
+h1{ font-size:50px ; color:#FFFFFF; line-height: 1.3em}
+h2{ font-size:40px ; color:#4A4949; line-height: 1.3em}
+h3{ font-size: 20px; font-style:bold ; color:#4A4949; line-height: 1.3em}
+Section { background-color: #FFFFFF; height:598px ;}
+Section secondary { background-color: #FFFFFF;
+}
+
+Body {background-color:#FFFFFF;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.4em;
+    margin: 0;
+}
+
+.banner {
+    width: 100%;
+    overflow: hidden;
+    height: 30rem;
+}
+
+
+.Section1Index {
+width: 100%;
+overflow: hidden;
+height: 15rem;
+}
+
+.MiniGridWildlifeImage {
+    align-items: center;
+    }
+
+.main {
+    padding-top: 3rem;
+    /* width: 100vw; */
+}
+
+#sectionWildlife1{
+    width: 100%;
+}
+
+#GridContainerWildlife{
+    display: grid;
+    grid-template-areas:
+    "sectionWildlife1 sectionWildlife1 sectionWildlife1"
+    "sectionWildlife21 sectionWildlife22 sectionWildlife23"
+    "sectionWildlife3 sectionWildlife3 sectionWildlife3";
+    grid-template-rows: 0.4fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 25px;
+    grid-column-gap: 10px;
+}
+
+#Wildlife1{
+    grid-area: sectionWildlife1;
+}
+
+#Wildlife21{
+    grid-area: sectionWildlife21;
+}
+
+#Wildlife22{
+    grid-area: sectionWildlife22;
+}
+
+#Wildlife23{
+    grid-area: sectionWildlife23;
+}
+
+#Wildlife3{
+    grid-area: sectionWildlife3;
+}
+.miniWildlifeGrid{
+    display: grid;
+    grid-template-rows: 2fr 1fr ;
+    grid-template-columns: 1fr;
+    grid-row-gap: 10px;
+}
+
+.gridContainerIndex{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.container{
+    /**width: 85%;**/
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.containerItem1{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.containerItem2{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+
+
+#imageSection1{
+    width: 100vw;
+}
+
+@media all and (max-width: 500px) {
+    main{
+        #GridContainerWildlife{
+            display: grid;
+            grid-template-areas:
+            "sectionWildlife1"
+            "sectionWildlife21"
+            "sectionWildlife22"
+            "sectionWildlife23"
+            "sectionWildlife3";
+            grid-template-rows: 0.4fr 1fr 1fr;
+            grid-template-columns: 1fr;
+            grid-row-gap: 10px;
+            grid-column-gap: 10px;
+        }
+        .miniWildlifeGrid{
+            display: grid;
+            align-items: center;
+            grid-template-rows: 1fr ;
+            grid-template-columns: 1fr;
+            grid-row-gap: 10px;
+        }
+        .MiniGridWildlifeImage {
+            align-items: center;
+            width: 50%;
+            }
+        .gridContainerIndex{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+        }
+        .container{
+            max-width: 90%;
+            margin: 0 auto;
+        }    
+    }
+}
